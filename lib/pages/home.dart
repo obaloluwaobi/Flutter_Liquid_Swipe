@@ -15,9 +15,9 @@ class HomePage extends StatefulWidget {
 class _HomePageState extends State<HomePage> {
 
   final pages = [
-    PageOne(),
-    PageTwo(),
-    PageThree(),
+    const PageOne(),
+    const PageTwo(),
+    const PageThree(),
   ];
   
   @override
@@ -27,7 +27,7 @@ class _HomePageState extends State<HomePage> {
           pages: pages,
           waveType: WaveType.liquidReveal,
           enableSideReveal: true,
-          slideIconWidget: const Icon(Icons.arrow_back_ios),
+          slideIconWidget: const Icon(Icons.arrow_back_ios,color: Colors.white,),
       
       ),
     );
